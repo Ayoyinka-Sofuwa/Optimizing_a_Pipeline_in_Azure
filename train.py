@@ -17,9 +17,6 @@ from azureml.core import Dataset
 
 web_paths = ['https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv']
 ds = Dataset.Tabular.from_delimited_files(path=web_paths)
-### YOUR CODE HERE ###
-
-run = Run.get_context()
 
 def clean_data(data):
     # Dict for cleaning data
@@ -51,9 +48,9 @@ def clean_data(data):
 
 x, y = clean_data(ds)
 
+run = Run.get_context()
 # TODO: Split data into train and test sets.
-
-### YOUR CODE HERE ###a
+### YOUR CODE HERE ###
 x_train, x_test, y_train, y_test = train_test_split(x, y, random_state = 42, test_size = 0.2)
 
 def main():
