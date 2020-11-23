@@ -8,7 +8,12 @@ This model is then compared to an Azure AutoML run.
 ## Summary
 **In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
 
+This data is a Bank marketing data that contains information about its customers with 40 features and attributes about their personal information, financial, occupational and educational statuses, and the campaign details for each customer. We seek to use this data to predict if they will subscribe to a fixed term deposit in the bank or not.
+
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
+
+The best performing model was the Voting Ensemble for my AutoML run, with an accuracy of 0.91825 and AUC weighted of 0.94837.
+For my hyperdrive configuration, my best run had an Accuracy(the primary metric) of 0.90759.
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
